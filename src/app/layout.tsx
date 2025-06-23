@@ -5,8 +5,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-	title: "Explain This Video",
-	description: "Explain This Video - for YouTube",
+	title: "Summarise Videos for YouTube",
+	description: "Summarise Videos for YouTube using AI.",
 };
 
 export default function RootLayout({

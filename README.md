@@ -1,36 +1,85 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# summarise.video 📝🎬
 
-## Getting Started
+A modern web application that analyzes YouTube videos and provides AI-generated summaries, key takeaways, and transcripts. Built with Next.js and powered by Together AI (Llama 4).
 
-First, run the development server:
+## 🌐 Visit Live Site
+
+- https://summarise.video
+
+## 🚀 Getting Started
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/jideabdqudus/explainthisvideo.git
+cd explainthisvideo
+```
+
+2. Install dependencies:
+
+```bash
+npm install
+# or
+yarn install
+```
+
+3. Set up environment variables:
+
+```bash
+cp .env.local.sample .env.local
+```
+
+Add your API keys to `.env.local`:
+
+```
+YOUTUBE_API_KEY=your_youtube_api_key_here
+TOGETHER_API_KEY=your_together_ai_key_here
+NEXT_PUBLIC_GOOGLE_ANALYTICS_MEASUREMENT_ID=your_ga_id_here // Optional
+```
+
+4. Run the development server:
 
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to see the application.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🎯 Features
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Video Analysis
 
-## Learn More
+- Input any YouTube video URL
+- Get AI-generated summaries of video content
+- View key takeaways organized in a clear format
+- Access the full video transcript
+- Read top comments from the video
 
-To learn more about Next.js, take a look at the following resources:
+### Smart Limitations
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Handles videos up to 3 hours in length
+- Provides intelligent error handling for invalid URLs
+- Offers sample data for demonstration purposes
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 💻 Tech Stack
 
-## Deploy on Vercel
+- **Frontend**: Next.js, React, TypeScript, TailwindCSS
+- **API**: Next.js Server Actions
+- **AI**: Together AI (Llama 4)
+- **External APIs**: YouTube Data API, YouTube Transcript API
+- **Analytics**: Google Analytics
+- **UI Components**: Radix UI components, React Toastify
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🔒 Privacy
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Your privacy is important! This application:
+
+- Does not store your search history or analysis results
+- Uses Google Analytics for anonymous usage statistics only
+- Processes everything securely through server-side API calls
+
+## 📝 License
+
+This project is licensed under the MIT License.
