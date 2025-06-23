@@ -1,5 +1,6 @@
 import type React from "react";
 import { motion } from "framer-motion";
+import { Github } from "lucide-react";
 
 export const Footer: React.FC = () => {
   return (
@@ -13,20 +14,31 @@ export const Footer: React.FC = () => {
         Built by{" "}
         <a
           href="https://www.linkedin.com/in/jideabdqudus/"
-          className="underline"
+          className="underline mr-2"
           target="_blank"
         >
-          Jide
+          Jide.
         </a>
-        . Powered by{" "}
+        Powered by{" "}
         <a href="https://together.ai" className="underline" target="_blank">
           Together.ai
         </a>{" "}
         &{" "}
-        <a href="https://www.llama.com/" className="underline" target="_blank">
-          Llama 4
+        <a
+          href="https://www.llama.com/"
+          className="underline mr-2"
+          target="_blank"
+        >
+          Llama 4.
         </a>
-        .
+        <Github className="inline-block size-4" /> View on{" "}
+        <a
+          href="https://github.com/jideabdqudus/summarise-video"
+          target="_blank"
+          className="underline"
+        >
+          Github
+        </a>
       </p>
     </motion.footer>
   );
