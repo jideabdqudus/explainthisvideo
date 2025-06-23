@@ -11,8 +11,8 @@ A modern web application that analyzes YouTube videos and provides AI-generated 
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/jideabdqudus/explainthisvideo.git
-cd explainthisvideo
+git clone https://github.com/jideabdqudus/summarise-video.git
+cd summarise-video
 ```
 
 2. Install dependencies:
