@@ -6,6 +6,7 @@ import { useState } from "react";
 import { Button, Input } from "@/components/ui";
 import { useVideoAnalysis } from "@/context/video-analysis-context";
 import { isValidYoutubeUrl } from "@/lib/utils";
+import { motion } from "framer-motion";
 
 export const HeroIntro: React.FC = () => {
   const { analyzeVideo, isLoading, error } = useVideoAnalysis();
@@ -32,7 +33,12 @@ export const HeroIntro: React.FC = () => {
   return (
     <div className="flex flex-col space-y-6 max-w-lg">
       <div className="text-center md:text-left">
-        <div className="mb-6">
+        <motion.div
+          initial={{ y: -10, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.5 }}
+          className="mb-6"
+        >
           <p className="inline-block py-1 px-3 rounded-full bg-gray-100 text-gray-700 text-xs mb-4">
             100% free & open source
           </p>
@@ -51,9 +57,14 @@ export const HeroIntro: React.FC = () => {
               className="ml-4 inline-block"
             />
           </h1>
-        </div>
+        </motion.div>
 
-        <div className="flex flex-col items-center md:items-start space-y-3 ">
+        <motion.div
+          initial={{ y: -10, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.5 }}
+          className="flex flex-col items-center md:items-start space-y-3 "
+        >
           <div className="h-16 ">
             <p className="text-sm text-gray-300 mb-6">
               Get insights and summaries from your videos, it accepts videos
@@ -95,7 +106,7 @@ export const HeroIntro: React.FC = () => {
           <p className="text-xs text-gray-400">
             *Your privacy is protected! No data is transmitted or stored.
           </p>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

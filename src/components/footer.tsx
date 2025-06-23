@@ -1,8 +1,14 @@
 import type React from "react";
+import { motion } from "framer-motion";
 
 export const Footer: React.FC = () => {
   return (
-    <footer className="container mx-auto py-4 text-center text-sm">
+    <motion.footer
+      initial={{ x: -50, opacity: 0 }}
+      animate={{ x: 0, opacity: 1 }}
+      transition={{ duration: 0.5 }}
+      className="container mx-auto py-4 text-center text-sm"
+    >
       <p>
         Built by{" "}
         <a
@@ -22,6 +28,6 @@ export const Footer: React.FC = () => {
         </a>
         .
       </p>
-    </footer>
+    </motion.footer>
   );
 };
