@@ -13,7 +13,7 @@ export const Footer: React.FC = () => {
       <p>
         Built by{" "}
         <a
-          href="https://www.linkedin.com/in/jideabdqudus/"
+          href="https://www.abdulqudus.com/"
           className="underline mr-2"
           target="_blank"
         >
